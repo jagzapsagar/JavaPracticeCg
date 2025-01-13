@@ -29,6 +29,9 @@ public class GroupingByGender {
 		collect.forEach((e,b) ->{
 			System.out.println(e +": "+b);
 		});
+		
+		Map<String,Long> collect2 = list.stream().collect(Collectors.groupingBy(e -> e.getGender(), Collectors.counting()));
+		System.out.println("Counting: "+collect2);
 	}
 
 }

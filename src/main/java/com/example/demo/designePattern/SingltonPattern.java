@@ -4,7 +4,7 @@ package com.example.demo.designePattern;
 class SingleTonEx{
 	private static SingleTonEx Intanc;
 
-	public SingleTonEx() {
+	private SingleTonEx() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

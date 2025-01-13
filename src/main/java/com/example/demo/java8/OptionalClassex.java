@@ -32,6 +32,7 @@ public class OptionalClassex {
 		Optional<String> str3 = Optional.ofNullable(str2);
 		// Using ifPresent() to safely check if the value is present
         str3.ifPresent(s -> System.out.println("Length of the string is: " + s.length()));
+   
 
      // Using orElse() to provide a fallback if the value is absent (null)
         String result = str3.orElse("Default Value");
@@ -42,7 +43,7 @@ public class OptionalClassex {
         Optional<String> optionalEmpty = Optional.empty();
         
         System.out.println(opetionalWithValue);
-        System.out.println(optionalWithNull);
+        System.out.println(optionalWithNull.isPresent());
         System.out.println(optionalEmpty);
         
 	}
