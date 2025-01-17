@@ -17,8 +17,10 @@ public class FourInOne {
 		list.add(7);
 		
 		Consumer<Integer> con = ((a) -> System.out.println("Consumer: "+a));
+		con.accept(45);
 		
 		Predicate<Integer> pr = ((b) -> b>5);
+		pr.test(22);
 		
 		Supplier<Integer> sup = (() -> 123);
 		

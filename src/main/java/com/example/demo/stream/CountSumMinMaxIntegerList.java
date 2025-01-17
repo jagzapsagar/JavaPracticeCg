@@ -13,7 +13,7 @@ public class CountSumMinMaxIntegerList {
 		list.add(2);
 		list.add(4);
 		
-		long count = list.stream().count();
+		long count = list.stream().filter(e -> e%2==0).count();
 		System.out.println(count);
 		
 		int sum = list.stream().mapToInt(e -> e).sum();
