@@ -11,6 +11,7 @@ public class TreeSetEx {
 		set.add(4);
 		set.add(12);
 		set.add(5);
+		set.add(0);
 		System.out.println("Set: "+set);
 	}
 
