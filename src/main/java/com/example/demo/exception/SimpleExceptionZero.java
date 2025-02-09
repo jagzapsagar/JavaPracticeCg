@@ -13,6 +13,7 @@ public class SimpleExceptionZero {
 		}catch(ArithmeticException e) {
 			e.printStackTrace();
 		}
+		System.out.println("Endddddddddd");
 	}
 	
 
