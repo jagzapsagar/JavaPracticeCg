@@ -26,6 +26,17 @@ public class SumFinction {
 		
 		Optional<Integer> max = list.stream().max(Comparator.naturalOrder());
 		System.out.println("Max: "+max);
+		
+		ArrayList<Emp> elist = new ArrayList<>();
+		elist.add(new Emp(2,"Sagar",52000,"male"));
+		elist.add(new Emp(3,"Kartik",41000,"male"));
+		elist.add(new Emp(4,"Krutika",25000,"female"));
+		elist.add(new Emp(5,"Shweta",12000,"female"));
+		
+		Optional<Integer> reduce = elist.stream().map(Emp::getSalary).reduce((a,b) -> a+b);
+		
+		int sum3 = elist.stream().mapToInt(Emp::getSalary).sum();
+		System.out.println(sum3);
 	}
 
 }

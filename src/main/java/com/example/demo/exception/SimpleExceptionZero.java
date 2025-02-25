@@ -12,6 +12,7 @@ public class SimpleExceptionZero {
 			System.out.println(result);
 		}catch(ArithmeticException e) {
 			e.printStackTrace();
+			
 		}
 		System.out.println("Endddddddddd");
 	}
