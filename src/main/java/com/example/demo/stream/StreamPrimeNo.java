@@ -12,6 +12,12 @@ public class StreamPrimeNo {
 		
 		int reduce = IntStream.rangeClosed(1, no).reduce(1,(a,b) -> a*b);
 		System.out.println(reduce);
+		System.out.println();
+		IntStream
+		.range(2, no).forEach(System.out::print);
+		System.out.println();
+		IntStream
+		.rangeClosed(2, no).forEach(System.out::print);
 	}
 
 }
