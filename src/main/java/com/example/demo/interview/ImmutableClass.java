@@ -1,8 +1,8 @@
 package com.example.demo.interview;
 
 final class TestClass {
-	final int id;
-	final String name;
+	private final int id;
+	private final String name;
 	public TestClass(int id, String name) {
 		super();
 		this.id = id;
