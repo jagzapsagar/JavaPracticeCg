@@ -44,9 +44,10 @@ public class InheritanceEx {
 		
 		System.out.println("**** A a= new B(); ****");
 		A a= new B();
-		System.out.println(a.a);
+		System.out.println("A: "+a.a);
 		a.runn();
 		a.show();
+		//a.shows(); // NOT Allowed
 		
 		
 		System.out.println("B b= new B()");
@@ -56,6 +57,7 @@ public class InheritanceEx {
 		b.shows();
 		b.name = "TestString"; //private field nit allow
 		System.out.println(b.name);
+		System.out.println(b.a);
 		
 		
 		
