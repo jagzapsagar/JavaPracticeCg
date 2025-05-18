@@ -21,7 +21,7 @@ public class BiFourInOne {
 		//BiSupplier  // Java dosent have bi supplier
 		//BiSupplier<String, Integer> BiSup = () -> ("abc",123);
 		
-		BiFunction<String, Integer, String> BiF = (a,b) -> "abc";
+		BiFunction<String, Integer, String> BiF = (a,b) -> "abccd";
 		System.out.println(BiF.apply("abc", 123));
 		
 		

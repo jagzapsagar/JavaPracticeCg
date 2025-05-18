@@ -22,6 +22,21 @@ public class StringEx {
 		String con = "ConcatString";
 		System.out.println(s1.concat(con));
 		System.out.println(s1.toUpperCase());
+		
+		System.out.println("----------------------------");
+		// <---------------->
+		// Replace
+		String sample = "capgemini mumbai";
+		String replace = sample.replace("mumbai", "pune");
+		System.out.println("Replace: "+replace);
+		//Concat
+		String concat = sample.concat(" India");
+		System.out.println("Concat: "+concat);
+		// Contains
+		boolean contains = sample.contains("mumbai");
+		System.out.println("Contains: "+contains);
+		
+		System.out.println("Start with ca: "+sample.startsWith("ca"));
 	}
 
 }
