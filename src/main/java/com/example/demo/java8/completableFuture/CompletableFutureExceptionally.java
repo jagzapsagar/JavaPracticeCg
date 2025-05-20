@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutionException;
 public class CompletableFutureExceptionally {
 	public static void main(String[] args) throws ExecutionException, InterruptedException {
 		CompletableFuture comp = CompletableFuture.supplyAsync(()->{
-			return "Comp1";
+			return "Complete";
 		}).exceptionally((e) -> {
 			return "exptionnn";
 		});
