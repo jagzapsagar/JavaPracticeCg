@@ -11,6 +11,7 @@ public class AnagramsString {
 		
 		char[] arr1 = str1.toCharArray();
 		char[] arr2 = str2.toCharArray();
+		
 		if(arr1.length==arr2.length) {
 			Arrays.sort(arr1);
 			Arrays.sort(arr2);

@@ -3,6 +3,7 @@ package com.example.demo.interview;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Map;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class FriquencyOfWord {
@@ -24,7 +25,7 @@ public class FriquencyOfWord {
 		
 		String str = "hello welcome to hello to";
 		
-		Map<String, Long> mapm =Arrays.stream(str.split(" ")).collect(Collectors.groupingBy(e -> e, Collectors.counting()));
+		Map<String, Long> mapm =Arrays.stream(str.split(" ")).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(mapm);
 	}
 

@@ -36,7 +36,8 @@ public class SumFinction {
 		Optional<Integer> reduce = elist.stream().map(Emp::getSalary).reduce((a,b) -> a+b);
 		
 		int sum3 = elist.stream().mapToInt(Emp::getSalary).sum();
-		System.out.println(sum3);
+		
+		System.out.println(reduce);
 	}
 
 }

@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class LongestWordInString {
 	public static void main(String[] args) {
-		String str = "story on java";
+		String str = "story on java h";
 		
 		Optional<Integer> max = Arrays.stream(str.split(" ")).map(e -> e.length()).max(Comparator.naturalOrder());
 		System.out.println(max);
@@ -20,6 +20,10 @@ public class LongestWordInString {
 		
 		Optional<Entry<String,Integer>> max2 = collect.entrySet().stream().max(Comparator.comparingInt(e -> e.getValue()));
 		System.out.println(max2);
+		
+		Optional<Entry<String,Integer>> min = Arrays.stream(str.split(" ")).collect(Collectors.toMap(e -> e, e -> e.length()))
+		.entrySet().stream().min(Comparator.comparingInt(e -> e.getValue()));
+		System.out.println(min);
 	}
 
 }

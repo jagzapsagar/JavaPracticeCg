@@ -18,28 +18,8 @@ public class FlatMap {
 		list1.add(list2);
 		list1.add(list3);
 		
-		list1.stream().flatMap(e -> e.stream()).collect(Collectors.toList());// Good 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		List<String> collect3 = list1.stream().flatMap(e -> e.stream()).collect(Collectors.toList());// Good 
+		System.out.println(collect3);
 		
 		List<String> collect = list1.stream().flatMap(e -> e.stream()).collect(Collectors.toList());
 		System.out.println(collect);

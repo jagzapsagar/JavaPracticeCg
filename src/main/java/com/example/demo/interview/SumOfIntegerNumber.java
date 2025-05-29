@@ -19,6 +19,8 @@ public class SumOfIntegerNumber {
 		
 		double avg = list.stream().mapToInt(e -> e).average().getAsDouble();
 		System.out.println(avg);
+		
+		int sum3 = list.stream().mapToInt(e -> e).sum();
 	}
 
 }

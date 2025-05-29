@@ -46,6 +46,8 @@ public class OptionalClassex {
         System.out.println(optionalWithNull.isPresent());
         System.out.println(optionalEmpty);
         
+        optionalWithNull.ifPresent(e -> e.length());
+        
 	}
 
 }

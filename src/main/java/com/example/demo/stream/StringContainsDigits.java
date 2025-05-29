@@ -6,6 +6,8 @@ public class StringContainsDigits {
 		
 		boolean allMatch = str.chars().allMatch(e -> Character.isDigit(e));
 		System.out.println(allMatch);
+		
+		boolean allMatch2 = str.chars().allMatch(e -> Character.isDigit(e));
 	}
 
 }

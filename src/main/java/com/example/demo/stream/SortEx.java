@@ -2,6 +2,9 @@ package com.example.demo.stream;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.List;
+import java.util.stream.Collectors;
+
 import com.example.demo.stream.Emp;
 
 public class SortEx {
@@ -14,6 +17,9 @@ public class SortEx {
 		
 		elist.sort(Comparator.comparing(Emp::getSalary).reversed());
 		System.out.println(elist);
+		
+		List<Emp> collect = elist.stream().sorted(Comparator.comparingInt(e -> e.getSalary())).collect(Collectors.toList());
+		
 	}
 
 }

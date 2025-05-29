@@ -21,6 +21,8 @@ public class TwoArrayListFindDistinctSort {
 		
 		List<Integer> sort =Stream.concat(list1.stream(), list2.stream()).distinct().sorted().collect(Collectors.toList());
 		System.out.println(sort);
+		
+		List<Integer> collect = Stream.concat(list1.stream(), list2.stream()).distinct().sorted().collect(Collectors.toList());
 	}
 
 }

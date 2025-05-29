@@ -7,6 +7,7 @@ public class ArmStrongNumber {
 		int b=no;
 		int count=0;
 		int result = 0;
+		
 		while(a>0) {
 			a = a/10;
 			count++;
