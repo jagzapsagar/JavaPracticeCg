@@ -1,5 +1,6 @@
 package com.example.demo.stream;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -9,6 +10,14 @@ public class CharOccurenceInString {
 	public static void main(String[] args) {
 		
 		String name = "hello";
+		HashMap<Character, Integer> m = new HashMap<>();
+		for(int i=0;i<name.length();i++) {
+			m.put(name.charAt(i), m.getOrDefault(name.charAt(i), 0)+1);
+		}
+		
+		System.out.println("-----------");
+		System.out.println(m);
+		System.out.println("-----------");
 		
 		List<Character> collect3 = name.chars().mapToObj(e -> (char) e).distinct().collect(Collectors.toList());
 		String collect4 = name.chars().mapToObj(e -> String.valueOf((char) e)).distinct().collect(Collectors.joining());
