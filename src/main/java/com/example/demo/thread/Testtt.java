@@ -1,6 +1,6 @@
 package com.example.demo.thread;
 
-public class Test {
+public class Testtt {
 	public static void main(String[] args) {
 		Counter c1 = new Counter();
 		//Counter c2 = new Counter();

@@ -2,6 +2,7 @@ package com.example.demo.mapE;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class ArrayToHashMap {
 	public static void main(String[] args) {
@@ -17,6 +18,11 @@ public class ArrayToHashMap {
 			map.put(e.getId(), e.getName());
 		});
 		System.out.println(map);
+		
+		System.out.println("using for loop");
+		for(Map.Entry<Integer, String> m : map.entrySet()) {
+			System.out.println(m.getKey()+" "+ m.getValue());
+		}
 		
 	}
 

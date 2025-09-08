@@ -7,8 +7,8 @@ class A {
 	public void runn() {
 		System.out.println("A class Runn");
 
-		Integer a = new Integer(20);
-		Integer b = new Integer(20);
+		Integer a = 20;
+		Integer b = 20;
 
 		if (a.compareTo(b) == 0) {
 			System.out.println("True");

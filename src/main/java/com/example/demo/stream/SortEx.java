@@ -3,6 +3,8 @@ package com.example.demo.stream;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import com.example.demo.stream.Emp;
@@ -19,7 +21,15 @@ public class SortEx {
 		System.out.println(elist);
 		
 		List<Emp> collect = elist.stream().sorted(Comparator.comparingInt(e -> e.getSalary())).collect(Collectors.toList());
+		List<Emp> collectt = elist.stream().sorted(Comparator.comparingInt(e -> e.getSalary())).toList();
 		
+		Map<String,Double> collect2 = elist.stream().collect(Collectors.groupingBy(e -> e.getGender(), Collectors.averagingInt(e -> e.getSalary())));
+		Map<String,Long> collect3 = elist.stream().collect(Collectors.groupingBy(e -> e.getGender(), Collectors.counting()));
+		
+		System.out.println(collect2);
+		System.out.println(collect3);
+		// highest paid emp
+		Optional<Emp> max = elist.stream().max(Comparator.comparingInt(e -> e.getSalary()));
 	}
 
 }
