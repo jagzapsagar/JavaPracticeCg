@@ -48,6 +48,19 @@ public class OptionalClassex {
         
         optionalWithNull.ifPresent(e -> e.length());
         
+        System.out.println("----- Optional methods----");
+        Optional<String> OString = Optional.ofNullable("");
+        System.out.println(OString.isEmpty());
+        System.out.println(OString.isPresent());
+        System.out.println(OString);
+        System.out.println(OString);
+        
+        String s = "abc fgt lk";
+        String[] split = s.split(" ");
+        for(String a:split) {
+        	System.out.println(a);
+        }
+        
 	}
 
 }

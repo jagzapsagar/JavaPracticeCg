@@ -21,7 +21,6 @@ public class Average {
 		
 		OptionalDouble average = elist.stream().mapToDouble(e -> e.getSalary()).average();
 		System.out.println("AVG emp sal: "+average.getAsDouble());
-		
 		int sum = elist.stream().mapToInt(e -> e.getSalary()).sum();
 	}
 

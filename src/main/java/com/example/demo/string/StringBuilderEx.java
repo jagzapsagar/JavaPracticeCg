@@ -4,6 +4,8 @@ import com.example.demo.interfaces.main;
 
 public class StringBuilderEx {
 	public static void main(String[] args) {
+		
+		//StringBuilder s = "ABC";
 		StringBuilder str = new StringBuilder("abc");
 		str.append("xyz");
 		System.out.println(str);
