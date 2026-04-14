@@ -12,8 +12,10 @@ class Test implements Callable<String> {
 
 public class CallbleExample{
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Test obj = new Test();
+		String call = obj.call();
+		System.out.println(call);
 		//Thread t = new Thread(obj::call());
 	}
 	

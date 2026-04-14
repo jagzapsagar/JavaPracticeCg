@@ -1,12 +1,20 @@
 package com.example.demo.stream;
 
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 public class DigitAlphaSeperate {
 	public static void main(String[] args) {
 		String str = "ab1@2j*g78";
 		
+		Map<Boolean,List<Character>> collect4 = str.chars().mapToObj(e -> (char)e)
+		.collect(Collectors.partitioningBy(Character::isDigit));
+		
+		System.out.println("-----------");
+		System.out.println(collect4);
+		System.out.println("-----------");
+
 		List<String> collect = str.chars()
 		.filter(Character::isDigit)
 		 .mapToObj(e -> String.valueOf((char)e))

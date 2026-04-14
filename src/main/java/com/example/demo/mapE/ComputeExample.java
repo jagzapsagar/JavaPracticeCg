@@ -25,7 +25,7 @@ public class ComputeExample {
 		System.out.println(map);
 		
 		System.out.println("GetorDefault");
-		Integer orDefault = map.getOrDefault("G", 25);
+		Integer orDefault = map.getOrDefault("G", 25)+5;
 		Integer orDefault2 = map.getOrDefault("A", 11);
 		System.out.println("G " + orDefault);
 		System.out.println("A " + orDefault2);

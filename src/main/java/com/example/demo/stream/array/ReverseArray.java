@@ -21,6 +21,8 @@ public class ReverseArray {
 		List<Integer> list = Arrays.stream(ar).boxed().collect(Collectors.toList());
 		
 		Collections.reverse(list);
+		
+		Collections.reverse(Arrays.stream(ar).boxed().collect(Collectors.toList()));
 	}
 
 }

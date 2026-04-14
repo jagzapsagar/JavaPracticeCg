@@ -25,6 +25,8 @@ public class FourInOne {
 		Supplier<Integer> sup = (() -> 123);
 		
 		Function<Integer, Integer> fun = ((c) -> c*c);
+		Function<Integer, String> fun2 = ((c) -> "return data");
+		String apply = fun2.apply(20);
 		
 		List<Integer> fil = list.stream().map(fun).filter(pr).peek(con).map(e -> e*sup.get()).collect(Collectors.toList());
 		

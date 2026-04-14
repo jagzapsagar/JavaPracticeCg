@@ -22,7 +22,7 @@ class SingletonT{
 }
 public class ThreadSafeSinglton {
 	public static void main(String[] args) {
-		
+		SingletonT getinstance = SingletonT.getinstance();
 	}
 
 }

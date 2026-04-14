@@ -14,10 +14,10 @@ public class TestInterface  {
 
 	public static void main(String[] args) {
 		inter1 a = (k,l) -> System.out.print("add");
-		//a.add(10);
+		a.add(10,20);
 		
-		inter1 i = new TestClass();
-		i.add(10,25);
+		//inter1 i = new TestClass();
+		//i.add(10,25);
 	}
 
 
