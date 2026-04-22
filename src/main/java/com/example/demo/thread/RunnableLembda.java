@@ -18,6 +18,31 @@ public class RunnableLembda {
 		});
 		
 		tr.start();
+		
+		
+		
+		
+		
+		
+		
+		
+		Runnable run2 = () -> {
+			System.out.println("run2");
+		};
+		run2.run();
+
+		Thread thh = new Thread(run2);
+		//thh.start();
+
+		Thread timpl = new Thread(() -> {
+			System.out.print("timpl");
+		});
+		timpl.start();
+		
+		
+		
+		String s = null;
+		System.out.println(s.valueOf(10));
 	}
 
 }

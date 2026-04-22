@@ -1,9 +1,14 @@
 package com.example.demo.interview;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class FindCharNotPresntInInputString {
 	
@@ -22,6 +27,25 @@ public class FindCharNotPresntInInputString {
 		}
 		
 		System.out.println(list);
+		int no = 4;
+		boolean anyMatch = IntStream.range(0,31).map(e -> 1<< e)
+		.anyMatch(i -> i== no);
+		System.out.println(anyMatch);
+		
+		String word = "Welcome back Punee";
+		Map<String,Integer> collect2 = Arrays.stream(word.split(" "))
+			.collect(Collectors.toMap(e -> e, e -> e.length()));
+		
+		Optional<String> max = Arrays.stream(word.split(" "))
+		.max(Comparator.comparingInt(String::length));
+		System.out.println(max);
+		
+		
+		
+		System.out.println(collect2);
+		System.out.println(max);
+		
+		
 		
 	}
 
